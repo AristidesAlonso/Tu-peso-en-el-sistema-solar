@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tu peso en el sistema solar</title>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en los demas planetas del sisetema solar</p>
+    <script>
+      var usuario = prompt ( "¿Cual es tu peso?")
+      var planeta = parseInt(prompt ("Elige tu planeta.\n 1 es Mercurio, 2 es Venus, 3 es Tierra, 4 es Luna, 5 es Marte, 6 es Jupiter, 7 es Saturno, 8 es Urano, 9 es Neptuno"));
+      var peso = parseInt(usuario);
+      var g_mercurio = 3.7;
+      var g_venus = 8.7;
+      var g_tierra = 9.8;
+      var g_luna = 1.6;
+      var g_marte = 3.7;
+      var g_jupiter = 24.8;
+      var g_saturno = 10.4;
+      var g_urano = 8.7;
+      var g_neptuno = 11.1
+      var peso_final;
+      var nombre;
+      if (planeta == 1)
+      {
+        peso_final = peso * g_mercurio / g_tierra;
+        nombre = "Mercurio";
+      }
+      else if (planeta == 2)
+      {
+        peso_final = peso * g_venus / g_tierra;
+        nombre = "Venus";
+      }
+      else if (planeta == 3)
+      {
+        peso_final = peso;
+        nombre = "Tierra";
+      }
+      else if (planeta == 4)
+      {
+        peso_final = peso * g_luna / g_tierra;
+        nombre = "Luna";
+      }
+      else if (planeta == 5)
+      {
+        peso_final = peso * g_marte / g_tierra;
+        nombre = "Marte";
+      }
+      else if (planeta == 6)
+      {
+        peso_final = peso * g_jupiter / g_tierra;
+        nombre = "Jupiter";
+      }
+      else if (planeta == 7)
+      {
+        peso_final = peso * g_saturno / g_tierra;
+        nombre = "Saturno";
+      }
+      else if (planeta == 8)
+      {
+        peso_final = peso * g_urano / g_tierra;
+        nombre = "Urano";
+      }
+      else if (planeta == 9)
+      {
+        peso_final = peso * g_neptuno / g_tierra;
+        nombre = "Netuno";
+      }
+      else
+      {
+        peso_final = 0.01;
+        nombre = "El planeta del principito ";
+      }
+      peso_final = parseInt(peso_final);
+      document.write("Tu peso en " + nombre + " es <strong> " + peso_final + " kilos </strong>");
+    </script>
+  </body>
+</html>
